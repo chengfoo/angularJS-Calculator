@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="ourpretendcompany">
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+		href="css/custom.css"
+		rel="stylesheet">
+	
+	<body ng-controller="MainCtrl"
+		class="{{$state.current.data.specialClass}}"
+		id="page-top">
+	
+		<!-- Main view  -->
+		<div ui-view></div>
+	
+		<!-- Main Angular scripts-->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+		<script
+			src="https://cdn.rawgit.com/angular-ui/ui-router/0.2.15/release/angular-ui-router.min.js"></script>
+			
+		<script src="js/app.js"></script>
+	
+		<script src="js/config.js"></script>
+		
+		<script src="js/controllers.js"></script>
+	</body>
+</html>

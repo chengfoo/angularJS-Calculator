@@ -1,0 +1,87 @@
+<div class="row">
+	<table class="row col-xs-12">
+		<tr>
+			<td colspan="3" >
+				<input class="text-right" number-input pattern="{{numberRegex}}" ng-model="display">
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onDelClick()">DEL</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<label>{{result}}</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button style="background-color: gray" type="button" class="fullwidth btn-lg btn-block col-xs-3" ng-click="onClrClick()">CLEAR</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn-block col-xs-3" ng-style="{'border-color': operator == '^' ?  'yellow': ''}" ng-click="onOpClick('^')">^</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn-block col-xs-3" ng-style="{'border-color': operator == '√' ?  'yellow': ''}" ng-click="onOpClick('√')">√</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(7)">7</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(8)">8</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(9)">9</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-style="{'border-color': operator == '/' ?  'yellow': ''}" ng-click="onOpClick('/')">/</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(4)">4</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(5)">5</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(6)">6</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-style="{'border-color': operator == '*' ?  'yellow': ''}" ng-click="onOpClick('*')">*</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(1)">1</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(2)">2</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-click="onNumClick(3)">3</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn col-xs-3" ng-style="{'border-color': operator == '-' ?  'yellow': ''}" ng-click="onOpClick('-')">-</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="button" class="fullwidth btn-block col-xs-3" ng-click="onNumClick(0)">0</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn-block col-xs-3" ng-click="onNumClick('.')">.</button>
+			</td>
+			<td>
+				<button type="button" class="fullwidth btn-block col-xs-3" ng-style="{'border-color': operator == '+' ?  'yellow': ''}" ng-click="onOpClick('+')">+</button>
+			</td>
+		</tr>	
+		<tr>
+			<td colspan="4">
+				<button type="button" class="fullwidth btn col-xs-9" ng-click="onEnterClick()">ENTER</button>
+			</td>
+		</tr>
+	</table>
+		
+</div>
